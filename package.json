@@ -1,13 +1,16 @@
 {
   "name": "okoge-ws",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "okoge.js",
   "scripts": {
-  "start": "node index  .js",
-  "test": "echo \"Error: no test specified\" && exit 1"
-},
+    "start": "node okoge.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
