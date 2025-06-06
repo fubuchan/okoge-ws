@@ -9,7 +9,10 @@ wss.on('connection', (ws) => {
   console.log('クライアント接続');
   ws.on('message', (message) => {
     console.log('受信:', message);
-    ws.send('okogeから応答！');
+    ws.send(JSON.stringify({
+      type: "response",
+      message: "okogeから応答！"
+    }));
   });
 });
 
